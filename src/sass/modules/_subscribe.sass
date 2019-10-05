@@ -1,0 +1,64 @@
+.subscribe
+	position: relative
+	&::before
+		position: absolute
+		content: ''
+		top: -405px
+		bottom: auto
+		left: 0
+		right: 0
+		width: 100%
+		height: 1335px
+		z-index: -1
+		background: url(../img/bg-surfer.jpg) center no-repeat
+		background-size: cover
+	&__wrapper
+		width: 595px
+		padding-top: 160px
+		padding-bottom: 75px
+		margin: 50px auto 0
+		text-align: center
+		position: relative
+		&::before
+			content: ''
+			+centered('x')
+			top: 0
+			width: 2px
+			height: 100px
+			display: block
+			background-color: $accent-color
+	&-form
+		display: flex
+	&__input
+		color: rgba(51,51,51,0.9)
+		font-family: "League"
+		font-size: 9px
+		line-height: 1
+		font-weight: 600
+		text-transform: uppercase
+		letter-spacing: 5.4px
+		+dem(540px, 50px)
+		box-shadow: inset 0 100px 2px rgba(0,0,0,0.3)
+		background-color: #f5f5f5
+		border: 1px solid rgba(97,97,97,0.0)
+		padding-left: 30px
+		padding-right: 30px
+		&:active, &:focus
+			border: 1px solid rgba(97,97,97,0.15)
+			outline: none
+	&__submit
+		+dem(50px)
+		text-indent: -1000px
+		background: $accent-color url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEwIDE4Ij48Zz48Zz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOS44NDUgOC42NEwuOTIyLjE1YS41NTIuNTUyIDAgMCAwLS43NTcgMCAuNDkuNDkgMCAwIDAgMCAuNzJMOC43MDggOSAuMTY1IDE3LjEyN2EuNDkuNDkgMCAwIDAgMCAuNzJBLjU1Mi41NTIgMCAwIDAgLjU0IDE4Yy4xMzUgMCAuMjc0LS4wNS4zNzctLjE1Mmw4LjkyNC04LjQ5YS40OS40OSAwIDAgMCAuMDA0LS43MTh6Ii8+PC9nPjwvZz48L3N2Zz4=) center no-repeat
+		background-size: initial
+		border: 0px none
+		padding: 0
+		transition: $trs
+		cursor: pointer
+		margin-left: -1px
+		&:hover, &:focus
+			background-color: lighten($accent-color, 5%)
+			outline: none
+		&:active
+			background-color: darken($accent-color, 15%)
+			outline: none

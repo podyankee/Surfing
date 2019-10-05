@@ -1,0 +1,43 @@
+.hero
+	.wrap.relative
+		.header
+			.nav-logo-wrapper
+				a(href="#").logo
+					+icon('logo')
+			nav
+				ul.navigation.navigation__header
+					li.navigation__item
+						a.navigation__link(href="#") Stories
+					li.navigation__item
+						a.navigation__link(href="#") Events
+					li.navigation__item
+						a.navigation__link(href="#") Places
+					li.navigation__item
+						a.navigation__link(href="#") Boards
+		.slide-wrapper
+			.slide-item
+				.slide-item__desc
+					h2.slide-item__heading
+						span Your
+						| Beautiful Escape
+					.slide-item__text
+						p One of the greatest things about the sport of surfing is that you need only three things: your body a surfboard, and a wave.
+				.slide-item__img.slide-item__img--bg-1
+			.slide-controls
+				a(href="#").slide-controls__left
+					+icon('header-left-control')
+				.slide-controls-number
+					span.slide-controls-number__active 1
+					span.slide-controls-number__from /
+					span.slide-controls-number__total 5
+				a(href="#").slide-controls__right
+					+icon('header-right-control')
+		.site-desc
+			.site-desc__content First Surfing Magazine
+		.social.social--vertical
+			.social__item
+				+icon('tumblr')
+			.social__item
+				+icon('twitter')
+			.social__item
+				+icon('vimeo')

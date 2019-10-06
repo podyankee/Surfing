@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	const headerSlider = $(".owl-carousel");
+	const headerSlider = $("#headerSlider");
+	const shopSlider = $("#shopSlider");
 
 	headerSlider.on('initialized.owl.carousel', function(e) {
 
@@ -10,13 +11,26 @@ $(document).ready(function() {
 	headerSlider.owlCarousel({
 		items: 1,
 		dots: false,
-		smartSpeed: 1000
+		smartSpeed: 2000
+	});
+	shopSlider.owlCarousel({
+		items: 3,
+		//loop: true,
+		dots: false,
+		smartSpeed: 5000,
+		margin: 2
 	});
 	$('#headerSliderLeft').click(function() {
-		headerSlider.trigger('prev.owl.carousel')
+		headerSlider.trigger('prev.owl.carousel');
 	});
 	$('#headerSliderRight').click(function() {
-		headerSlider.trigger('next.owl.carousel')
+		headerSlider.trigger('next.owl.carousel');
+	});
+	$('#shopSliderLeft').click(function() {
+		shopSlider.trigger('prev.owl.carousel');
+	});
+	$('#shopSliderRight').click(function() {
+		shopSlider.trigger('next.owl.carousel');
 	});
 
 	headerSlider.on('changed.owl.carousel', function(e) {

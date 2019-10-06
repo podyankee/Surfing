@@ -3,33 +3,18 @@ section.shop
 		h2.title
 			span.subtitle Shop
 			|Surfboards
-		.shop-slider
-			.board
-				.board__img-holder
-					img(src="assets/img/board-1.png", alt="Surfing board").board__img
-				.board-desc
-					.board__cat Funboards
-					.board__title Chilli Rare Bird
-					.board-buy
-						.board-buy__price $890
-						.board-buy__link Buy
-			.board
-				.board__img-holder
-					img(src="assets/img/board-2.png", alt="Surfing board").board__img
-				.board-desc
-					.board__cat Surfboards
-					.board__title Emery NEM XF
-					.board-buy
-						.board-buy__price $950
-						.board-buy__link Buy
-			.board
-				.board__img-holder
-					img(src="assets/img/board-3.png", alt="Surfing board").board__img
-				.board-desc
-					.board__cat Funboards
-					.board__title Agency GROM
-					.board-buy
-						.board-buy__price $670
-						.board-buy__link Buy
+	.wrap.shop-slider-wrapper
+		.shop-slider-special-holder
+			#shopSlider.owl-carousel
+				include _shop-item-1
+				include _shop-item-2
+				include _shop-item-3
+	.wrap
+		.shopSlider-controls
+			#shopSliderLeft.shopSlider-left
+				+icon('boards-left')
+			#shopSliderRight.shopSlider-right
+				+icon('boards-right')
+	.wrap
 		.shop-link-wrapper
 			a.read-more Show All

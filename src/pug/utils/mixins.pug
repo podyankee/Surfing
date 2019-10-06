@@ -2,7 +2,7 @@
 mixin icon(name, mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
-			use(xlink:href="assets/img/sprite.svg#" + name)
+			use(xlink:href="./assets/img/sprite.svg#" + name)
 mixin topMenuLink(link,title)
 	li.top__menu_item
 		a(href= link).top__menu_link= title

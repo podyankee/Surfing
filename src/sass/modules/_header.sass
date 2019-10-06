@@ -1,5 +1,3 @@
-.hero
-	margin-bottom: 90px
 .header
 	display: flex
 	align-items: center
@@ -74,6 +72,9 @@
 .slide
 	&-wrapper
 		position: relative
+		width: 100%
+		overflow: hidden
+		padding-bottom: 95px
 	&-controls
 		position: absolute
 		width: 81px
@@ -82,6 +83,7 @@
 		justify-content: space-between
 		left: 0
 		bottom: 0
+		z-index: 9
 .icon-header
 	&-right-control, &-left-control
 		width: 10px
@@ -129,6 +131,7 @@
 		position: absolute
 		right: -45px
 		bottom: 0
+		z-index: 9
 		display: flex
 		flex-direction: column
 		justify-content: space-between
@@ -144,6 +147,10 @@
 			width: 19px
 			height: 17px
 			fill: #ebebeb
+#headerSlider.owl-carousel
+	.owl-stage-outer
+		overflow: visible
+
 @media(max-width: 1400px)
 	.social--vertical
 		right: 30px
